@@ -1,0 +1,83 @@
+/*Validate your HTML, lint your CSS, comb your CSS*/
+
+.cf:before, .cf:after { 
+	content: " "; 
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+
+*, 
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section,
+header, 
+.block__1_4, 
+.block__1_3 {
+	border: 2px solid black;
+	min-height: 100px;
+	margin-bottom: 10px;
+}
+
+/* ==== Mobile Styling ==== */
+
+.hamburger {
+	font-size: 4em;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	margin: .2em;
+}
+
+.menu { 
+	display: none;}
+
+.hero {
+	min-height: 300px;
+}
+
+.block-group {
+	padding: 1em;
+}
+
+/* ==== End of Mobile Styling ==== */
+
+
+/* ==== Start of Desktop Styling ==== */
+
+@media screen and (min-width: 800px) {
+	.hamburger {
+		display: none;
+	}
+	.menu { 
+		display: block;}
+
+	.block__1_4 {
+		float: left;
+		width: 25%;
+		margin: 0;
+	}
+
+	.block__1_3 {
+		float: left;
+		width: 33.333%;
+		margin: 0;
+	}
+
+}
+
+/* ==== End of Desktop Styling ==== */
+
+
